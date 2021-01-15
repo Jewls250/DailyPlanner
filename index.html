@@ -17,8 +17,9 @@
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
-    />
+      />
     <link rel="stylesheet" href="style.css" />
+    <script defer src="https://cdn.jsdelivr.net/npm/luxon@1.25.0/build/global/luxon.min.js"></script>
     <title>Work Day Scheduler</title>
   </head>
 
@@ -26,60 +27,120 @@
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your busy work days </p>
-      <p id="currentDay" class="le  ad"></p>
+      <p id="currentDay" class="lead"></p>
     </header>
     <div class="container">
       <!-- Timeblocks go here -->
-     
- 
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Time</th>
+            <th scope="col">Todos</th>
+            <th scope="col">Submit</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">8AM</th>
+            <td><textarea name="" id="8amText" cols="50" rows="2" placeholder="What do you need to do?"></textarea></td>
+            <td><button type="button" class="btn btn-primary" id="8am">Save</button></td>
+          </tr>
+          <tr>
+            <th scope="row">9AM</th>
+            <td><textarea name="" id="" cols="50" rows="2" placeholder="What do you need to do?"></textarea></td>
+            <td><button type="button" class="btn btn-primary">Save</button></td>
+          </tr>
+          <tr>
+            <th scope="row">10AM</th>
+            <td><textarea name="" id="" cols="50" rows="2" placeholder="What do you need to do?"></textarea></td>
+            <td><button type="button" class="btn btn-primary">Save</button></td>
+          </tr>
+          <tr>
+            <th scope="row">11AM</th>
+            <td><textarea name="" id="" cols="50" rows="2" placeholder="What do you need to do?"></textarea></td>
+            <td><button type="button" class="btn btn-primary">Save</button></td>
+          </tr>
+          <tr>
+            <th scope="row">12PM</th>
+            <td><textarea name="" id="" cols="50" rows="2" placeholder="What do you need to do?"></textarea></td>
+            <td><button type="button" class="btn btn-primary">Save</button></td>
+          </tr>
+          <tr>
+            <th scope="row">1PM</th>
+            <td><textarea name="" id="" cols="50" rows="2" placeholder="What do you need to do?"></textarea></td>
+            <td><button type="button" class="btn btn-primary">Save</button></td>
+          </tr>
+          <tr>
+            <th scope="row">2PM</th>
+            <td><textarea name="" id="" cols="50" rows="2" placeholder="What do you need to do?"></textarea></td>
+            <td><button type="button" class="btn btn-primary">Save</button></td>
+          </tr>
+          <tr>
+            <th scope="row">3PM</th>
+            <td><textarea name="" id="" cols="50" rows="2" placeholder="What do you need to do?"></textarea></td>
+            <td><button type="button" class="btn btn-primary">Save</button></td>
+          </tr>
+          <tr>
+            <th scope="row">4PM</th>
+            <td><textarea name="" id="" cols="50" rows="2" placeholder="What do you need to do?"></textarea></td>
+            <td><button type="button" class="btn btn-primary">Save</button></td>
+          </tr>
+          <tr>
+            <th scope="row">5PM</th>
+            <td><textarea name="" id="" cols="50" rows="2" placeholder="What do you need to do?"></textarea></td>
+            <td><button type="button" class="btn btn-primary">Save</button></td>
+          </tr>
+        </tbody>
+      </table>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/luxon@1.25.0/build/global/luxon.min.js">
-      // when planner is open
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<script>
+// when planner is open
 // 1. the current day is displayed at the top of the calendar.
-// link to a api
+  // link to a api
 
 //WHEN I scroll down
 // 2. I am presented with time blocks for standard business hours
 // use rows and borders to seperate hours from eachother 
 $("document").ready(() => {
-    let newDiv = document.createElement('<div>')
+  // let newDiv = $("tr").append()
     
-    newDiv.text("<div>")
-
-})
-
+  //   newDiv.text("<div>")
+      
 //WHEN I view the time blocks for that day
 // 3. each time block is color-coded to indicate whether it is in the past, present, or future
 // use if, else if and else to determine if past present or future 
-for (let index = 0; index < array.length; index++) {
-    const element = array[index];
+// for (let index = 0; index < array.length; index++) {
+  //     const element = array[index];
     
 
-if(currentTime === present){
-    // background color changes to color
-} else if (currentTime === future){
-    //background color changest to colorOne
-} else {
-    //background color changes to colorTwo
-  }
-}
-
-//WHEN I click into a time block
-// 4. I can enter an event
-// ????
+// if(currentTime === present){
+  //     // background color changes to color
+// } else if (currentTime === future){
+  //     //background color changest to colorOne
+// } else {
+  //     //background color changes to colorTwo
+//   }
+// }
 
 //WHEN I click the save button for that time block
 // 5. the text for that event is saved in local storage
-// ????
+$('#8am').click(() =>{
+  let value = $('#8amText').val()
+
+  localStorage.setItem();
+
+})
 
 //WHEN I refresh the page
 // 6. the saved events persist
 // ????
+})
 
-    </script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+</script>
   </body>
 </html>
