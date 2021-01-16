@@ -19,10 +19,9 @@
       rel="stylesheet"
       />
     <link rel="stylesheet" href="style.css" />
-    <script defer src="https://cdn.jsdelivr.net/npm/luxon@1.25.0/build/global/luxon.min.js"></script>
     <title>Work Day Scheduler</title>
   </head>
-
+  
   <body>
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
@@ -31,86 +30,88 @@
     </header>
     <div class="container">
       <!-- Timeblocks go here -->
-
+      
       <table class="table">
         <thead>
-          <tr>
+          <tr id="todos">
             <th scope="col">Time</th>
-            <th scope="col">Todos</th>
-            <th scope="col">Submit</th>
+            <th scope="col" class="text-center">Todos</th>
+            <th scope="col"></th>
             
           </tr>
         </thead>
         <tbody>
           <tr>
-            <th scope="row">8AM</th>
+            <th scope="row" class="timeSize">8AM</th>
             <td><textarea name="" id="8amText" cols="50" rows="2" placeholder="What do you need to do?"></textarea></td>
             <td><button type="button" class="btn btn-primary" id="8am">Save</button></td>
           </tr>
           <tr>
-            <th scope="row">9AM</th>
-            <td><textarea name="" id="" cols="50" rows="2" placeholder="What do you need to do?"></textarea></td>
-            <td><button type="button" class="btn btn-primary">Save</button></td>
+            <th scope="row" class="timeSize">9AM</th>
+            <td><textarea name="" id="9amText" cols="50" rows="2" placeholder="What do you need to do?"></textarea></td>
+            <td><button type="button" class="btn btn-primary" id="9am">Save</button></td>
           </tr>
           <tr>
-            <th scope="row">10AM</th>
-            <td><textarea name="" id="" cols="50" rows="2" placeholder="What do you need to do?"></textarea></td>
-            <td><button type="button" class="btn btn-primary">Save</button></td>
+            <th scope="row" class="timeSize">10AM</th>
+            <td><textarea name="" id="10amText" cols="50" rows="2" placeholder="What do you need to do?"></textarea></td>
+            <td><button type="button" class="btn btn-primary" id="10am" >Save</button></td>
           </tr>
           <tr>
-            <th scope="row">11AM</th>
-            <td><textarea name="" id="" cols="50" rows="2" placeholder="What do you need to do?"></textarea></td>
-            <td><button type="button" class="btn btn-primary">Save</button></td>
+            <th scope="row" class="timeSize">11AM</th>
+            <td><textarea name="" id="11amText" cols="50" rows="2" placeholder="What do you need to do?"></textarea></td>
+            <td><button type="button" class="btn btn-primary" id="11am">Save</button></td>
           </tr>
           <tr>
-            <th scope="row">12PM</th>
-            <td><textarea name="" id="" cols="50" rows="2" placeholder="What do you need to do?"></textarea></td>
-            <td><button type="button" class="btn btn-primary">Save</button></td>
+            <th scope="row" class="timeSize">12PM</th>
+            <td><textarea name="" id="12pmText" cols="50" rows="2" placeholder="What do you need to do?"></textarea></td>
+            <td><button type="button" class="btn btn-primary" id="12pm">Save</button></td>
           </tr>
           <tr>
-            <th scope="row">1PM</th>
-            <td><textarea name="" id="" cols="50" rows="2" placeholder="What do you need to do?"></textarea></td>
-            <td><button type="button" class="btn btn-primary">Save</button></td>
+            <th scope="row" class="timeSize">1PM</th>
+            <td><textarea name="" id="1pmText" cols="50" rows="2" placeholder="What do you need to do?"></textarea></td>
+            <td><button type="button" class="btn btn-primary" id="1pm">Save</button></td>
           </tr>
           <tr>
-            <th scope="row">2PM</th>
-            <td><textarea name="" id="" cols="50" rows="2" placeholder="What do you need to do?"></textarea></td>
-            <td><button type="button" class="btn btn-primary">Save</button></td>
+            <th scope="row" class="timeSize">2PM</th>
+            <td><textarea name="" id="2pmText" cols="50" rows="2" placeholder="What do you need to do?"></textarea></td>
+            <td><button type="button" class="btn btn-primary" id="2pm">Save</button></td>
           </tr>
           <tr>
-            <th scope="row">3PM</th>
-            <td><textarea name="" id="" cols="50" rows="2" placeholder="What do you need to do?"></textarea></td>
-            <td><button type="button" class="btn btn-primary">Save</button></td>
+            <th scope="row" class="timeSize">3PM</th>
+            <td><textarea name="" id="3pmText" cols="50" rows="2" placeholder="What do you need to do?"></textarea></td>
+            <td><button type="button" class="btn btn-primary" id="3pm">Save</button></td>
           </tr>
           <tr>
-            <th scope="row">4PM</th>
-            <td><textarea name="" id="" cols="50" rows="2" placeholder="What do you need to do?"></textarea></td>
-            <td><button type="button" class="btn btn-primary">Save</button></td>
+            <th scope="row" class="timeSize">4PM</th>
+            <td><textarea name="" id="4pmText" cols="50" rows="2" placeholder="What do you need to do?"></textarea></td>
+            <td><button type="button" class="btn btn-primary" id="4pm">Save</button></td>
           </tr>
           <tr>
-            <th scope="row">5PM</th>
-            <td><textarea name="" id="" cols="50" rows="2" placeholder="What do you need to do?"></textarea></td>
-            <td><button type="button" class="btn btn-primary">Save</button></td>
+            <th scope="row"class="timeSize" >5PM</th>
+            <td><textarea name="" id="5pmText" cols="50" rows="2" placeholder="What do you need to do?"></textarea></td>
+            <td><button type="button" class="btn btn-primary" id="5pm">Save</button></td>
           </tr>
         </tbody>
       </table>
     </div>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-<script>
+    <footer class="text-center m-5 text-white">
+      <p>&copy; Giuliano Serawop || 2020</p>
+    </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@1.25.0/build/global/luxon.min.js"></script>
+    
+    <script>
 // when planner is open
 // 1. the current day is displayed at the top of the calendar.
   // link to a api
 
-//WHEN I scroll down
-// 2. I am presented with time blocks for standard business hours
-// use rows and borders to seperate hours from eachother 
 $("document").ready(() => {
-  // let newDiv = $("tr").append()
+  let localTime = luxon.localTime;
+  let rightNow = localTime.fromISO('2021-01-15T18:45', {zone: 'America/Denver'});
+  console.log(rightNow.toISO())
+ 
     
-  //   newDiv.text("<div>")
-      
 //WHEN I view the time blocks for that day
 // 3. each time block is color-coded to indicate whether it is in the past, present, or future
 // use if, else if and else to determine if past present or future 
@@ -127,14 +128,87 @@ $("document").ready(() => {
 //   }
 // }
 
-//WHEN I click the save button for that time block
-// 5. the text for that event is saved in local storage
+
 $('#8am').click(() =>{
-  let value = $('#8amText').val()
+  console.log('testing 2')
+  let textValue = $('#8amText').val()
 
-  localStorage.setItem();
-
+  let savedDescription = JSON.stringify(textValue);
+  localStorage.setItem('8amText', textValue)
 })
+
+$('#9am').click(() =>{
+  console.log('testing 2')
+  let textValue = $('#9amText').val()
+
+  let savedDescription = JSON.stringify(textValue);
+  localStorage.setItem('9amText', textValue)
+})
+
+$('#10am').click(() =>{
+  console.log('testing 3')
+  let textValue = $('#10amText').val()
+
+  let savedDescription = JSON.stringify(textValue);
+  localStorage.setItem('10amText', textValue)
+})
+
+$('#11am').click(() =>{
+  console.log('testing 4')
+  let textValue = $('#11amText').val()
+
+  let savedDescription = JSON.stringify(textValue);
+  localStorage.setItem('11amText', textValue)
+})
+
+$('#12pm').click(() =>{
+  console.log('testing 5')
+  let textValue = $('#12pmText').val()
+
+  let savedDescription = JSON.stringify(textValue);
+  localStorage.setItem('12pmText', textValue)
+})
+
+$('#1pm').click(() =>{
+  console.log('testing 6')
+  let textValue = $('#1pmText').val()
+
+  let savedDescription = JSON.stringify(textValue);
+  localStorage.setItem('1pmText', textValue)
+})
+
+$('#2pm').click(() =>{
+  console.log('testing 7')
+  let textValue = $('#2pmText').val()
+
+  let savedDescription = JSON.stringify(textValue);
+  localStorage.setItem('2pmText', textValue)
+})
+
+$('#3pm').click(() =>{
+  console.log('testing 8')
+  let textValue = $('#3pmText').val()
+
+  let savedDescription = JSON.stringify(textValue);
+  localStorage.setItem('3pmText', textValue)
+})
+
+$('#4pm').click(() =>{
+  console.log('testing 9')
+  let textValue = $('#4pmText').val()
+
+  let savedDescription = JSON.stringify(textValue);
+  localStorage.setItem('4pmText', textValue)
+})
+
+$('#5pm').click(() =>{
+  console.log('testing 10')
+  let textValue = $('#5pmText').val()
+
+  let savedDescription = JSON.stringify(textValue);
+  localStorage.setItem('5pmText', textValue)
+})
+
 
 //WHEN I refresh the page
 // 6. the saved events persist
