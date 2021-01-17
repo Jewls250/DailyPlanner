@@ -28,6 +28,7 @@
       <p class="lead">A simple calendar app for scheduling your busy work days </p>
       <p id="currentDay" class="lead"></p>
     </header>
+    
     <div class="container">
       <!-- Timeblocks go here -->
       
@@ -102,29 +103,35 @@
     <script src="https://cdn.jsdelivr.net/npm/luxon@1.25.0/build/global/luxon.min.js"></script>
     
     <script>
-// when planner is open
-// 1. the current day is displayed at the top of the calendar.
-  // link to a api
 
 $("document").ready(() => {
-  let localTime = luxon.localTime;
-  let rightNow = localTime.fromISO('2021-01-15T18:45', {zone: 'America/Denver'});
-  console.log(rightNow.toISO())
- 
+
+  let DateTime = luxon.DateTime;
+  DateTime.toLocaleString(DateTime.TIME_SIMPLE)
+  let localTime = DateTime.local().toFormat("T");
+
+  console.log(localTime)
+
+  let time = $('<div><h2 class="my-2">It is currently</h2><div>').append(localTime)
     
+  $('#currentDay').prepend(time)
+
+  // let hour = $('.timeSize')
+  
+  
 //WHEN I view the time blocks for that day
 // 3. each time block is color-coded to indicate whether it is in the past, present, or future
 // use if, else if and else to determine if past present or future 
-// for (let index = 0; index < array.length; index++) {
-  //     const element = array[index];
+// for (let index = 0; index < hour.length; index++) {
+//       const hours = hour[index];
     
 
-// if(currentTime === present){
-  //     // background color changes to color
+// if(localTime === present){
+//       // background color changes to color
 // } else if (currentTime === future){
-  //     //background color changest to colorOne
+//       //background color changest to colorOne
 // } else {
-  //     //background color changes to colorTwo
+//       //background color changes to colorTwo
 //   }
 // }
 
